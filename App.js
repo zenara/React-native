@@ -4,7 +4,9 @@
  * @flow
  */
 
+ //react library from node modules
 import React, { Component } from 'react';
+import Header from './src/components/header';
 import {
   Platform,
   StyleSheet,
@@ -23,17 +25,7 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native! CSJ
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
+      <Header />
     );
   }
 }
