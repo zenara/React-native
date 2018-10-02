@@ -7,6 +7,7 @@
  //react library from node modules
 import React, { Component } from 'react';
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 import {
   Platform,
   StyleSheet,
@@ -25,7 +26,10 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <Header headerText={'Albums'} />
+      <View>
+        <Header headerText={'Albums'} />
+        <AlbumList />
+      </View>
     );
   }
 }
